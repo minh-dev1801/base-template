@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base - Capstone - 03/02</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- Dark mode script -->
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swipper -->
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css" />
+    <!-- Output CSS -->
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="nav-container"></header>
+
+    <!-- Hero -->
+    <section
+      id="hero-container"
+      class="relative pb-56 pt-56 dark:bg-heading"
+    ></section>
+
+    <!-- Features -->
+    <section class="dark:bg-heading">
+      <div id="feature-container" class="container"></div>
+    </section>
+
+    <!-- About -->
+    <section class="py-[7.5rem] dark:bg-heading">
+      <div id="about-container" class="container"></div>
+    </section>
+
+    <!-- Team -->
+    <section class="relative py-[7.5rem] dark:bg-heading">
+      <div id="team-container" class="container"></div>
+    </section>
+
+    <!-- Services -->
+    <section class="pb-[7.5rem] dark:bg-heading">
+      <div id="services-container" class="container"></div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="relative bg-accent py-[7.5rem] dark:bg-backgroudOfDark">
+      <div id="pricing-container"></div>
+    </section>
+
+    <!-- Projects -->
+    <section class="pb-20 pt-[7.5rem] dark:bg-heading">
+      <div id="projects-container" class="container"></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="pb-20 dark:bg-heading">
+      <div id="testimonials-container" class="container"></div>
+    </section>
+
+    <!-- Counter -->
+    <section
+      id="counter-container"
+      class="relative overflow-hidden bg-background pb-[5.625rem] pt-[5.625rem] dark:bg-backgroudOfDark"
+    ></section>
+
+    <!-- Clients -->
+    <section class="pt-[5.625rem] dark:bg-heading">
+      <div id="clients-container" class="container"></div>
+    </section>
+
+    <!-- Blog -->
+    <section class="py-[7.5rem] dark:bg-heading">
+      <div id="blog-container" class="container"></div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact-container"
+      class="relative bg-accent py-[7.5rem] dark:bg-backgroudOfDark"
+    ></section>
+
+    <!-- CTA -->
+    <section
+      id="cta-container"
+      class="relative overflow-hidden bg-primary py-20"
+    ></section>
+
+    <!-- Footer -->
+    <footer id="footer-container" class="dark:bg-heading"></footer>
+
+    <!-- Main JS -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "port": 8000,
+  "files": ["./src/**/*.{html,css,js}"],
+  "server": {
+    "baseDir": "./src",
+    "routes": {
+      "/node_modules": "node_modules",
+      "/src/partials": "src/partials",
+      "/src/views": "src/views",
+      "/images": "images"
+    }
+  }
+}

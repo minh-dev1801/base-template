@@ -1,0 +1,29 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "lite-server -c configs/lite-server-config.json",
+    "start": "concurrently \"npm run dev\" \"npm run watch\""
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.10",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "flowbite": "^2.5.2",
+    "fslightbox": "^3.4.2",
+    "http-server": "^14.1.1",
+    "isotope-layout": "^3.0.6",
+    "swiper": "^11.2.1"
+  }
+}

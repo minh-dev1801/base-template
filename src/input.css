@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter text-base font-normal text-secondary;
+  }
+  h1 {
+    @apply mb-7 font-outfit text-5xl font-extrabold text-heading;
+  }
+
+  h2 {
+    @apply mb-5 text-xl text-primary;
+  }
+
+  h3 {
+    @apply font-outfit text-2xl font-medium text-heading;
+  }
+
+  h4 {
+    @apply font-outfit text-[22px] leading-[26px] text-heading;
+  }
+
+  h6 {
+    @apply mb-1 mt-[1.875rem] font-outfit text-[1.625rem] leading-8 text-heading;
+  }
+  span {
+    @apply font-medium text-heading;
+  }
+}
+
+@layer components {
+  .btn__tab__projects {
+    @apply rounded-full px-6 py-1 font-medium transition-all duration-300;
+  }
+
+  .btn__tab__projects.active {
+    @apply bg-primary text-white;
+  }
+}
+
+@layer utilities {
+  .list__dropdown::before {
+    content: "";
+    position: absolute;
+    left: 23%;
+    top: -2.7%;
+    height: 0.75rem;
+    width: 0.75rem;
+    transform: rotate(45deg);
+    border-top: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+    background-color: #181c31;
+  }
+
+  .heading__count {
+    @apply mb-[0.125rem] text-[50px] font-bold leading-[62px] text-heading;
+  }
+
+  .btn-blue {
+    @apply rounded-full bg-primary p-[13px];
+  }
+
+  .services__shadow {
+    --tw-shadow: 0px 6px 90px rgba(8, 14, 40, 0.04);
+    --tw-shadow-colored: 0px 6px 90px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .input__shadow {
+    --tw-shadow: 0px 6px 30px rgba(0, 0, 0, 0.03);
+    --tw-shadow-colored: 0px 6px 30px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .button__shadow {
+    --tw-shadow: 0px 10px 25px rgba(78, 107, 255, 0.2);
+    --tw-shadow-colored: 0px 10px 25px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .card__shadow {
+    --tw-shadow: 0px 8px 70px rgba(0, 0, 0, 0.05);
+    --tw-shadow-colored: 0px 8px 70px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  #navbar.scrolled {
+    @apply bg-white shadow-xl dark:bg-heading;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin-slow {
+    animation-name: spin;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes goUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-30px);
+    }
+  }
+
+  .hover-goUp {
+    animation-name: goUp;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+  }
+}
