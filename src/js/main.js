@@ -8,6 +8,7 @@ import tabInit from "./tab.js";
 import swipperInit from "./swipperInit.js";
 import darkModeHandle from "./darkModeHandle.js";
 import navScroll from "./navScroll.js";
+import "./scrollUpInit.js";
 
 loadPartial(`${PATH_BASE}/navbar.html`, `nav${ID_SUFFIX}`, () => {
   navScroll();
