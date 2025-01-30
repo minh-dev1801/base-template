@@ -49,9 +49,14 @@
     height: 0.75rem;
     width: 0.75rem;
     transform: rotate(45deg);
-    border-top: 1px solid currentColor;
-    border-left: 1px solid currentColor;
+    border-top: 1px solid #e5e7eb;
+    border-left: 1px solid #e5e7eb;
+    background-color: #fff;
+  }
+
+  .dark .list__dropdown::before {
     background-color: #181c31;
+    border-color: #3c4556;
   }
 
   .heading__count {
@@ -92,6 +97,14 @@
 
   #navbar.scrolled {
     @apply bg-white shadow-xl dark:bg-heading;
+  }
+
+  #navbar.scrolled #theme-toggle-dark-icon {
+    @apply text-secondary;
+  }
+
+  #navbar.scrolled #signIn {
+    @apply text-secondary;
   }
 
   @keyframes spin {
