@@ -37,6 +37,7 @@ loadPartial(`${PATH_BASE}/feature.html`, `feature${ID_SUFFIX}`, () => {
 loadPartial(`${PATH_BASE}/about.html`, `about${ID_SUFFIX}`, () => {
   refreshFsLightbox();
   animateRight();
+  animateLeft();
 });
 loadPartial(`${PATH_BASE}/team.html`, `team${ID_SUFFIX}`, () => {
   animateTop();
