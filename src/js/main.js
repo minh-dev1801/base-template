@@ -1,6 +1,10 @@
-import "/node_modules/fslightbox/index.js";
-import "/node_modules/flowbite/dist/flowbite.js";
-import "/node_modules/isotope-layout/dist/isotope.pkgd.min.js";
+// Nhập các thư viện từ node_modules
+import "swiper/css";
+import "fslightbox/index.js"; // JS cho fslightbox
+import "flowbite/dist/flowbite.js"; // JS cho Flowbite
+import "/src/input.css";
+
+// Nhập các file và hàm khác trong dự án
 import { PATH_BASE, ID_SUFFIX } from "./constant.js";
 import { loadPartial } from "./loadPartial.js";
 import priceToggleInit from "./priceToggle.js";
@@ -11,6 +15,7 @@ import navScroll from "./navScroll.js";
 import "./scrollUpInit.js";
 import { animateTop, animateLeft, animateRight } from "./scrollRevealInit.js";
 
+// Tải các partials HTML động
 loadPartial(`${PATH_BASE}/navbar.html`, `nav${ID_SUFFIX}`, () => {
   navScroll();
   darkModeHandle();

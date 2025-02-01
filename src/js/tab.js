@@ -1,3 +1,4 @@
+import Isotope from "isotope-layout";
 const tabInit = () => {
   window.addEventListener("load", () => {
     // Khởi tạo Isotope
