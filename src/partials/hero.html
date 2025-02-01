@@ -1,56 +1,67 @@
 <!-- Hero image -->
-<div class="absolute w-[38rem] top-0 right-0">
-  <img src="/images/hero.png" alt="Hero" class="absolute left-0 right-0" />
-  <img src="/images/shape-04.svg" alt="Hero" />
+<div
+  class="absolute right-0 top-0 hidden w-[38rem] md:block lg:right-0 lg:top-0 lg:block"
+>
+  <img
+    src="/images/hero.png"
+    alt="Hero"
+    class="absolute right-0 top-0 z-10 w-[70%] lg:w-full"
+  />
+  <img
+    src="/images/shape-04.svg"
+    alt="Hero"
+    class="absolute right-0 top-0 w-[70%] lg:w-full"
+  />
   <img
     src="/images/shape-01.svg"
     alt="Hero"
-    class="absolute bottom-72 -left-20 lg:hidden"
+    class="absolute -left-20 bottom-72 md:hidden lg:hidden"
   />
   <img
     src="/images/shape-03.svg"
     alt="Hero"
-    class="absolute bottom-[32px] left-[166px] lg:hidden"
+    class="absolute bottom-[32px] left-[166px] md:hidden lg:hidden"
   />
   <img
     src="/images/shape-02.svg"
     alt="Hero"
-    class="absolute bottom-0 right-[170px] lg:hidden"
+    class="absolute bottom-0 right-[170px] md:hidden lg:hidden"
   />
 </div>
 
 <!-- Hero content -->
-<div class="container">
-  <div class="w-[36rem]">
-    <h2 class="text-4xl text-heading font-extrabold dark:text-white">
-      We specialize in UI/UX, Web <br />
-      Development, Digital Marketing
-    </h2>
-    <p class="my-4 text-lg text-gray-500">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla
-      magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi
-      quis, posuere magna.
-    </p>
-    <div class="flex gap-8">
-      <button
-        type="button"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+<div class="animate-left container relative">
+  <h2
+    class="text-3xl font-semibold text-heading dark:text-white md:w-[50%] lg:text-[50px] lg:font-bold lg:leading-[62px]"
+  >
+    We specialize in UI/UX, Web <br />
+    Development, Digital <br />
+    Marketing
+  </h2>
+  <p class="my-4 text-base text-gray-500 md:w-[50%] lg:w-[34rem] lg:text-lg">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla
+    magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi
+    quis, posuere magna.
+  </p>
+  <div class="flex flex-col-reverse gap-8 lg:flex-row">
+    <button
+      type="button"
+      class="mb-2 me-2 w-fit rounded-full bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+    >
+      Get Started Now
+    </button>
+    <div>
+      <a
+        class="text-xl font-medium leading-none tracking-tight text-gray-900 dark:text-white lg:text-xl"
+        href="#"
       >
-        Get Started Now
-      </button>
-      <div>
-        <a
-          class="text-xl font-medium leading-none tracking-tight text-gray-900 md:text-5xl lg:text-xl dark:text-white"
-          href="#"
-        >
-          Call us (0123) 456 – 789
-        </a>
-        <p
-          class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
-        >
-          For any question or concern
-        </p>
-      </div>
+        Call us (0123) 456 – 789
+      </a>
+      <p
+        class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl"
+      >
+        For any question or concern
+      </p>
     </div>
   </div>
 </div>

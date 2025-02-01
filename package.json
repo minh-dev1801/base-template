@@ -24,6 +24,7 @@
     "fslightbox": "^3.4.2",
     "http-server": "^14.1.1",
     "isotope-layout": "^3.0.6",
+    "scrollreveal": "^4.0.9",
     "swiper": "^11.2.1"
   }
 }

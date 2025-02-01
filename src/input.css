@@ -7,7 +7,7 @@
     @apply font-inter text-base font-normal text-secondary;
   }
   h1 {
-    @apply mb-7 font-outfit text-5xl font-extrabold text-heading;
+    @apply mb-4 font-outfit text-3xl font-bold text-heading lg:mb-7 lg:text-5xl;
   }
 
   h2 {
@@ -31,6 +31,9 @@
 }
 
 @layer components {
+
+
+
   .btn__tab__projects {
     @apply rounded-full px-6 py-1 font-medium transition-all duration-300;
   }
@@ -60,7 +63,7 @@
   }
 
   .heading__count {
-    @apply mb-[0.125rem] text-[50px] font-bold leading-[62px] text-heading;
+    @apply mb-2 text-3xl font-bold text-heading lg:mb-[0.125rem] lg:text-[50px] lg:leading-[62px];
   }
 
   .btn-blue {

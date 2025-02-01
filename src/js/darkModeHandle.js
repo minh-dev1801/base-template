@@ -1,8 +1,6 @@
 export default function darkModeHandle() {
   var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
   var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
-  console.log(themeToggleDarkIcon);
-  console.log(themeToggleLightIcon);
 
   // Change the icons inside the button based on previous settings
   if (
