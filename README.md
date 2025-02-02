@@ -1,7 +1,7 @@
 # Base template
 
-![Demo header](/images/demo1.PNG)
-![Demo footer](/images/demo2.PNG)
+![Demo header](/src/images/demo1.PNG)
+![Demo footer](/src/images/demo2.PNG)
 
 ## Giới thiệu
 
